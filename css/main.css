@@ -1,0 +1,167 @@
+.glass {
+  width: 400px;
+  height: 400px;
+  background-image: url("../images/glass.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: rotate 2s infinite;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  z-index: 4;
+}
+
+.drink {
+  width: 400px;
+  height: 400px;
+  background-image: url("../images/drink.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: drink 1.5s ease-in-out infinite;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  z-index: 1;
+}
+
+.bubbles {
+  height: 400px;
+  width: 400px;
+  background-image: url("../images/bubbles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: bubbles 1.5s 1.5s ease-out infinite;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  z-index: 2;
+}
+
+.straw {
+  height: 400px;
+  width: 400px;
+  background-image: url("../images/straw.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: straw 1.5s ease-in-out infinite;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  z-index: 3;
+}
+
+.straw-shadow {
+  height: 400px;
+  width: 400px;
+  background-image: url("../images/straw-shadow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: straw 1.5s ease-in-out infinite;
+  position: absolute;
+  top: 10em;
+  left: 20em;
+  z-index: 3;
+}
+
+@keyframes drink {
+
+  0% {
+    opacity: 1;
+    left: 20em;
+  }
+
+  25% {
+    left: 19.9em;
+  }
+
+  50% {
+    opacity: 1;
+    left: 19.7em;
+  }
+
+  75% {
+    opacity: 1;
+    left: 19.9em;
+  }
+
+  100% {
+    opacity: 1;
+    top: 10em;
+    left: 20em;
+  }
+
+}
+
+@keyframes bubbles {
+
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.08);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+}
+
+@keyframes straw {
+
+  0% {
+    opacity: 1;
+    left: 20em;
+  }
+
+  25% {
+    left: 19.9em;
+    transform: rotate(2deg);
+  }
+
+  50% {
+    opacity: 1;
+    left: 19.7em;
+  }
+
+  75% {
+    opacity: 1;
+    left: 19.9em;
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    opacity: 1;
+    top: 10em;
+    left: 20em;
+  }
+
+  /* 0% {
+    opacity: 0;
+    top: 9.5em;
+    left: 25em;
+  }
+
+  90% {
+    opacity: 0;
+    top: 10.3em;
+    transform: rotate(2deg);
+    left: 20.5em;
+  }
+
+  100% {
+    opacity: 1;
+    top: 10em;
+    transform: rotate(0);
+    left: 20em;
+  } */
+
+}
